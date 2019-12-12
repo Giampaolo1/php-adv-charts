@@ -8,9 +8,9 @@ function getData() {
     url: "server.php",
     method: "GET",
     success: function(data) {
-
-        var printData1 = data.fatturato;
-        printData1(printData1.type, printData1.data);
+      console.log(data);
+        var datiGrafico = data.fatturato;
+        printData(datiGrafico.type, datiGrafico.data);
     },
     error: function(error) {
       console.log("error", error);
