@@ -24,8 +24,9 @@
     <title>JP php-adv-charts</title>
   </head>
   <body>
+
     <div class="wrapper">
-      <canvas id="myChart" width="400" height="400"></canvas>
+      <canvas id="myChart"></canvas>
     </div>
 
     <!-- JS: MY SCRIPT -->
