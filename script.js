@@ -7,8 +7,10 @@ function getData() {
   $.ajax({
     url: "server.php",
     method: "GET",
-    success: function(prendiIdati) {
-        printData(prendiIdati);
+    success: function(data) {
+
+        var printData1 = data.fatturato;
+        printData1(printData1.type, printData1.data);
     },
     error: function(error) {
       console.log("error", error);
@@ -16,10 +18,10 @@ function getData() {
   });
 }
 
-function printData(data) {
+function printData(type, data) {
   var ctx = document.getElementById('myChart').getContext('2d');
   var myChart = new Chart(ctx, {
-      type: 'line',
+      type: type,
       data: {
           labels: moment.monthsShort(),
           datasets: [{

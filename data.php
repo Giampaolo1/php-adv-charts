@@ -17,3 +17,7 @@
       ]
     ];
    ?>
+
+   <!-- <?php
+   // print_r ($graphs[fatturato][data]);
+   ?> -->
