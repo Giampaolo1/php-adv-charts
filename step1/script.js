@@ -17,47 +17,18 @@ function getData() {
 }
 
 // Grafico
-  function printChartJs(data) {
+function printChartJs(data) {
+
     var ctx = document.getElementById('myChart').getContext('2d');
     new Chart(ctx, {
-        type: "line",
+        type: 'line',
         data: {
             labels: moment.months(),
             datasets: [{
                 label: 'Vendite',
-                data: data,
-                // css del grafico
-                backgroundColor: [
-                  'green',
-                ],
-                borderColor: [
-                  'red',
-                ],
-                borderWidth: 3,
-                pointBackgroundColor: [
-                  "red",
-                  "red",
-                  "red",
-                  "red",
-                  "red",
-                  "red",
-                  "red",
-                  "red",
-                  "red",
-                  "red",
-                  "red",
-                  "red",
-                ],
+                data: data
             }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true
-                    }
-                }]
-            }
         }
-  });
+    });
+
 }
