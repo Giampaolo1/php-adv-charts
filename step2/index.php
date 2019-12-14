@@ -26,11 +26,11 @@
   <body>
 
     <div class="wrapper">
-      <canvas id="myChart"></canvas>
+      <canvas id="lineChart"></canvas>
     </div>
 
-    <div class="wrapper2">
-      <canvas id="myChart2"></canvas>
+    <div class="wrapper">
+      <canvas id="pieChart"></canvas>
     </div>
 
 
